@@ -220,7 +220,7 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {116065091,159887854,0,tonumber(our_id)},--Sudo users
+    sudo_users = {153696038,159887854,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
@@ -229,118 +229,150 @@ function create_config( )
 EN
 Manager Your Groups
 Admin Of Bot
-@SH_R2721 [ Developer& manager]
+@alireza_PT [ Developer& manager]
 
 FA
 مدیر گروه های شما
 ادمین 
-@SH_R2721 [سازنده ومدیر]
+@alireza_PT [سازنده ومدیر]
 ]],
     help_text = [[
 Commands list :
+(لیست دستورات)
 
 !kick [username|id]
 You can also do it by reply
+(اخراج{آیدی}از گروه)
 
 !ban [ username|id]
 You can also do it by reply
+(بن{آیدی فرد}مورد نظر)
 
 !unban [id]
 You can also do it by reply
+(خارج کردن از بن{آیدی فرد}مورد نظر)
 
 !who
 Members list
+(لیست افرادو اطلاعات آن ها)
 
 !modlist
 Moderators list
+(لیست مدیران گروه)
 
 !promote [username]
 Promote someone
+(ارتقا مقام{آیدی فرد}مورد نظر)
 
 !demote [username]
 Demote someone
+(سلب مقام{آیدی فرد}مورد نظر)
 
 !kickme
 Will kick user
+(اخراح کردن من از گروه)
 
 !about
 Group description
+(درباره گروه)
 
 !setphoto
 Set and locks group photo
+(تنظیم عکس)
 
 !setname [name]
 Set group name
+(تنظیم اسم)
 
 !rules
 Group rules
+(قوانین)
 
 !id
 return group id or user id
+(آیدی فرد مورد نظر)
 
 !help
+(راهنما)
 
 !lock [member|name|bots]
 Locks [member|name|bots]
+(قفل کردن{افراد-نام-ربات ها}در گروه)
 
 !unlock [member|name|photo|bots]
 Unlocks [member|name|photo|bots]
+(باز کردن{افراد-نام-عکس-ربات ها}در گروه)
 
 !set rules <text>
 Set <text> as rules
+(تنظیم قوانین{متن}مورد نظر)
 
 !set about <text>
 Set <text> as about
+(تنظیم درباره{متن}مورد نظر)
 
 !settings
 Returns group settings
+(تنظیمات)
 
 !newlink
 create/revoke your group link
+(دریافت لینک جدید)
 
 !link
 returns group link
+(لینک گروه)
 
 !owner
 returns group owner id
+(اونر گروه)
 
 !setowner [id]
 Will set id as owner
+(تنظیم کردن اونر{آیدی}شخص)
 
 !setflood [value]
 Set [value] as flood sensitivity
+(تنظیم حساسیت نسبت به اسپم)
 
 !stats
 Simple message statistics
+(اطلاعات گروه)
 
 !save [value] <text>
 Save <text> as [value]
+(ذخیره {عدد} و {متن} دلخواه)
 
 !get [value]
 Returns text of [value]
+(رفتن به {عدد}مورد نظر)
 
 !clean [modlist|rules|about]
 Will clear [modlist|rules|about] and set it to nil
+(برای پاک کردن مدیران-قوانین-درباره گروه)
 
 !res [username]
 returns user id
 "!res @username"
+(اطلاعات آیدی)
 
 !log
 will return group logs
+(آمار ورود و خروج)
 
 !banlist
 will return group ban list
+(لیست بن شده ها)
 
 **U can use both "/" and "!"
+(برای استفاده از دستورات باید از "!" و "/"استفاده کنید)
+
+*فقط اونر ها میتوانند ربات در گروه اد کنند
 
 
-*Only owner and mods can add bots in group
+*فقط مدیران و اونر ها میتوانند از دستورات اخراج از گروه-بن-خارج کردن از بن-لینک جدید-لینک-تنظیم عکس-تنظیم اسم-قفل کردن-باز کردن-تنظیم کردن قوانین-تنظیم کردن اطلاعات و دستور تنظیمات استفاده کنند
 
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
+*فقط اونر ها میتوانند از دستورات درباره ارتقا درجه-گرفتن درجه و دستور لوگ استفاده کنند
 
 ]]
 
