@@ -1,28 +1,20 @@
-local command = 'echo <text>'
-local doc = [[```
-/echo <text>
-Repeats a string of text.
-```]]
 
-local triggers = {
-	'^/echo[@'..bot.username..']*'
-}
+local function run(msg, matches)
+  local text = matches[1]
+  local b = 1
 
-local action = function(msg)
-
-	local input = msg.text:input()
-
-	if input then
-		sendMessage(msg.chat.id, latcyr(input))
-	else
-		sendMessage(msg.chat.id, doc, true, msg.message_id, true)
-	end
-
+  while b ~= 0 do
+    text = text:trim()
+    text,b = text:gsub('^!+','')
+  end
+  return text
 end
 
 return {
-	action = action,
-	triggers = triggers,
-	doc = doc,
-	command = command
+  description = "Simplest plugin ever!",
+  usage = "!echo [whatever]: echoes the msg",
+  patterns = {
+    "^!echo +(.+)$"
+  }, 
+  run = run 
 }
