@@ -218,9 +218,27 @@ function create_config( )
     "broadcast",
     "download_media",
     "invite",
-    "all"
+    "all",
+    "echo1",
+    "echo",
+    "calculator",
+    "autoleave1",
+    "autoleave",
+    "antilink",
+    "anti_spam",
+    "anti-link",
+    "Welcome",
+    "MemberManager",
+    "Spammer",
+    "floodcontrol",
+    "linkpv",
+    "locksticker",
+    "translate",
+    "time",
+    "tagall",
+    "plugins"
     },
-    sudo_users = {153696038,159887854,0,tonumber(our_id)},--Sudo users
+    sudo_users = {122835592,159887854,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
@@ -240,132 +258,163 @@ FA
 Commands list :
 (لیست دستورات)
 
-!kick [username|id]
-You can also do it by reply
-(اخراج{آیدی}از گروه)
+!kick [username|id]🚷
+You can also do it by reply👤
+(اخراج{آیدی}از گروه) 🔹قابل استفاده با ریپلی🔹
 
-!ban [ username|id]
-You can also do it by reply
-(بن{آیدی فرد}مورد نظر)
+!ban [ username|id]⬇️
+You can also do it by reply👤
+(بن{آیدی فرد}مورد نظر) 🔹قابل استفاده با ریپلی🔹
 
-!unban [id]
-You can also do it by reply
-(خارج کردن از بن{آیدی فرد}مورد نظر)
+!unban [id]⬆️
+You can also do it by reply👤
+(خارج کردن از بن{آیدی فرد}مورد نظر) 🔹قابل استفاده با ریپلی🔹
 
-!who
+!banall @UserName or (user_id)🚫
+you Can do it By Replay 👤
+(بن کردن فرد مورد نظر از تمامی گروه ها) 🔹قابل استفاده با ریپلی🔹
+
+!unbanall 🆔User_Id🆔
+(خارج کردن فرد مورد نظر از بن آل)
+
+!who🤔
 Members list
-(لیست افرادو اطلاعات آن ها)
+(لیست افراد و اطلاعات آن ها)
 
-!modlist
+!modlist🗒
 Moderators list
 (لیست مدیران گروه)
 
-!promote [username]
+!promote [username]🔵
 Promote someone
-(ارتقا مقام{آیدی فرد}مورد نظر)
+(ارتقا مقام{آیدی فرد}مورد نظر به مدیریت گروه)
 
-!demote [username]
+!demote [username]🔴
 Demote someone
-(سلب مقام{آیدی فرد}مورد نظر)
+(سلب مقام{آیدی فرد}مورد نظر از مدیریت گروه)
 
-!kickme
+!kickme👋🏼
 Will kick user
 (اخراح کردن من از گروه)
 
-!about
+!about📃
 Group description
 (درباره گروه)
 
-!setphoto
+!setphoto✔️
 Set and locks group photo
 (تنظیم عکس)
 
-!setname [name]
+!setname [name]✔️
 Set group name
 (تنظیم اسم)
 
-!rules
+!rules❌
 Group rules
 (قوانین)
 
-!id
+!id🆔
 return group id or user id
 (آیدی فرد مورد نظر)
 
-!help
-(راهنما)
+!help📄
+(راهنما برای استفاده از دستورات)
 
-!lock [member|name|bots]
-Locks [member|name|bots]
-(قفل کردن{افراد-نام-ربات ها}در گروه)
+!lock [member|name|bots]🔒
+Locks [member|name|arabic|bots]
+(قفل کردن{ورود به گروه-نام گروه-ربات ها}در گروه)
 
-!unlock [member|name|photo|bots]
-Unlocks [member|name|photo|bots]
-(باز کردن{افراد-نام-عکس-ربات ها}در گروه)
+!unlock [member|name|photo|bots]🔓
+Unlocks [member|name|photo|arabic|bots]
+(باز کردن{ورود به گروه-نام گروه-عکس گروه-عربی-ربات ها}در گروه)
 
-!set rules <text>
+!set rules <text>✏️
 Set <text> as rules
 (تنظیم قوانین{متن}مورد نظر)
 
-!set about <text>
+!set about <text>📌
 Set <text> as about
 (تنظیم درباره{متن}مورد نظر)
 
-!settings
+!settings⚙
 Returns group settings
-(تنظیمات)
+(تنظیمات گروه)
 
-!newlink
+!newlink🖋
 create/revoke your group link
-(دریافت لینک جدید)
+(دریافت لینک جدید برای گروه)
 
-!link
+!link🗞
 returns group link
 (لینک گروه)
 
-!owner
+!linkpv : 🔐
+To give the invitation Link of group in Bots PV.
+(هنگام استفاده ربات لینک گروه را به pv ارسال میکند)
+
+!echo <text>🗣
+(با استفاده از این دستور هر چه را که بخواهید ربات تکرار میکند)
+
+!invite [ @username ]✋🏻
+(دعوت کردن [آیدی فرد مورد نظر] به گروه)
+
+!plugins😏
+(برای نمایش لیست پلاگین های موجود) 🔹قابلیت فعال و غیر فعال سازی🔹
+
+!time [local]🕗
+(نشان دادن ساعت و تاریخ فعلی مکان مورد نظر)
+
+!calc <number> [+ × ÷ -]📱
+(ماشین حساب!قابلیت استفاده از 4 عمل اصلی ریاضی)
+
+!spam😈
+(تبدیل حالت ربات ضد اسپن به اسپمر!)
+
+
+!owner😎
 returns group owner id
 (اونر گروه)
 
-!setowner [id]
+!setowner [id]🤓
 Will set id as owner
 (تنظیم کردن اونر{آیدی}شخص)
 
-!setflood [value]
+!setflood [value]🔒
 Set [value] as flood sensitivity
 (تنظیم حساسیت نسبت به اسپم)
 
-!stats
+!stats📈
 Simple message statistics
 (اطلاعات گروه)
 
-!save [value] <text>
+!save [value] <text>📥
 Save <text> as [value]
 (ذخیره {عدد} و {متن} دلخواه)
 
-!get [value]
+!get [value]🚀
 Returns text of [value]
 (رفتن به {عدد}مورد نظر)
 
-!clean [modlist|rules|about]
+!clean [modlist|rules|about]🌪
 Will clear [modlist|rules|about] and set it to nil
 (برای پاک کردن مدیران-قوانین-درباره گروه)
 
-!res [username]
+!res [username]🔍
 returns user id
 "!res @username"
 (اطلاعات آیدی)
 
-!log
+!log🚶
 will return group logs
 (آمار ورود و خروج)
 
-!banlist
+!banlist😡
 will return group ban list
 (لیست بن شده ها)
 
-**U can use both "/" and "!"
-(برای استفاده از دستورات باید از "!" و "/"استفاده کنید)
+**U can use both "/" and "!"😉
+شما میتوانید از "/" و "!" برای دستورات استفاده کنید
+
 
 *فقط اونر ها میتوانند ربات در گروه اد کنند
 
